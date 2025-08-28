@@ -1,7 +1,9 @@
 const Formations = () => {
   return (
     <>
-      <p>Formations page</p>
+      <div id="formations">
+        <p>TODO Formations</p>
+      </div>
     </>
   );
 };

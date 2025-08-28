@@ -1,7 +1,9 @@
 const Experiences = () => {
   return (
     <>
-      <p>exp page</p>
+      <div id="experiences">
+        <p>XP page</p>
+      </div>
     </>
   );
 };

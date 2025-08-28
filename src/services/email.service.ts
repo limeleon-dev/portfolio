@@ -2,7 +2,8 @@ import { emailjsConfig } from "../config/emailjs.config";
 import emailjs from "@emailjs/browser";
 
 export interface templateParameters {
-  emailTo: string;
+  emailTo?: string;
+  emailFrom?: string;
   nameFrom: string;
   message: string;
   [key: string]: unknown;
@@ -25,25 +26,23 @@ export const sendContactMail = (parameters: templateParameters): Promise<unknown
   return emailjs
     .send(emailjsConfig.emailService, emailjsConfig.emailTemplateContact, parameters)
     .then((response) => {
-      console.log(response);
       return response;
     })
     .catch((error) => {
-      console.error(error);
+      console.error("Une erreur est survenue :", error);
       return error;
     });
 };
 
-/*export const sendAutoResponseMail = (): Promise<unknown> => {
+export const sendAutoResponseMail = (emailToParam: string): Promise<unknown> => {
   init();
   return emailjs
-    .send(emailjsConfig.emailService, emailjsConfig.emailTemplateAutoResponse, null)
+    .send(emailjsConfig.emailService, emailjsConfig.emailTemplateAutoResponse, { emailTo: emailToParam })
     .then((response) => {
-      console.log(response);
       return response;
     })
     .catch((error) => {
-      console.error(error);
+      console.error("Une erreur est survenue :", error);
       return error;
     });
-};*/
+};
