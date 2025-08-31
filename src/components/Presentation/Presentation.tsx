@@ -4,7 +4,9 @@ const Presentation = () => {
       <section className="container mx-auto py-12">
         <div className="flex flex-col items-center gap-16">
           <div className="max-w-3xl text-center flex flex-col gap-6">
-            <h1 className="text-4xl font-bold">Développeur Web full-stack</h1>
+            <h1 className="badge badge-primary badge-lg text-white px-6 py-4 text-base font-medium mx-auto">
+              Développeur web full-stack
+            </h1>
             <div className="text-justify leading-relaxed space-y-4">
               <p>
                 Bonjour, je m'appelle Guillaume Hostache ! Rigoureux, déterminé et bienveillant, je suis passionné par
@@ -37,12 +39,12 @@ const Presentation = () => {
               </div>
 
               <a
-                href=""
+                href="CV - Guillaume Hostache.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all duration-300 font-medium shadow-md flex items-center"
               >
-                <i className="fa-solid fa-download mr-2"></i> Voir mon CV
+                <i className="fa-solid fa-download mr-2"></i> Mon CV
               </a>
             </div>
           </div>

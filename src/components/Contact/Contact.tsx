@@ -2,7 +2,7 @@ import { useFormik } from "formik";
 import { useState } from "react";
 import { contactValidation } from "./ContactValidation";
 import ContactDialog from "./ContactDialog";
-//import { sendAutoResponseMail, sendContactMail } from "../../services/email.service";
+import { sendAutoResponseMail, sendContactMail } from "../../services/email.service";
 
 const Contact = () => {
   const [hasBeenSubmitted, setHasBeenSubmitted] = useState<boolean>(false);
@@ -18,15 +18,13 @@ const Contact = () => {
     onSubmit: async (values) => {
       setHasBeenSubmitted(true);
 
-      console.log(values);
-
-      /*await sendContactMail({
+      await sendContactMail({
         nameFrom: values.username,
         emailFrom: values.email,
         message: values.message,
       });
 
-      await sendAutoResponseMail(values.email);*/
+      await sendAutoResponseMail(values.email);
 
       setOpenDialog(true);
     },

@@ -24,8 +24,8 @@ const CompetenceCard = ({ competence, index }: { competence: (typeof competences
   const paleHover = lightenHex(competence.hoverColor || colorHex, 60);
 
   const col = (index % 6) + 1;
-  let tooltipPosition = "left-1/2 -translate-x-1/2"; // par défaut centré
-  if (col === 1) tooltipPosition = "left-0"; // première colonne → collé à gauche
+  let tooltipPosition = "left-1/2 -translate-x-1/2";
+  if (col === 1) tooltipPosition = "left-0";
   if (col === 6) tooltipPosition = "right-0";
 
   return (

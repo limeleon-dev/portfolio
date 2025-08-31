@@ -1,5 +1,5 @@
-import experiencesData from "../../data/experiences.json";
-import ExperienceCard from "./ExperiencesCard";
+import experiencesJsonData from "../../data/experiences.json";
+import ExperienceCard from "./ExperienceCard";
 
 const Experiences = () => {
   return (
@@ -10,7 +10,7 @@ const Experiences = () => {
       </div>
 
       <div className="flex flex-wrap justify-center items-start gap-4">
-        {experiencesData.map((exp) => (
+        {experiencesJsonData.map((exp) => (
           <ExperienceCard key={exp.id} exp={exp} />
         ))}
       </div>

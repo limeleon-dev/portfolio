@@ -1,7 +1,7 @@
 import { useState } from "react";
-import experiencesData from "../../data/experiences.json";
+import experiencesJsonData from "../../data/experiences.json";
 
-const ExperienceCard = ({ exp }: { exp: (typeof experiencesData)[0] }) => {
+const ExperienceCard = ({ exp }: { exp: (typeof experiencesJsonData)[0] }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -9,7 +9,6 @@ const ExperienceCard = ({ exp }: { exp: (typeof experiencesData)[0] }) => {
       className={`bg-white border rounded-2xl shadow-md p-6 transition-all duration-300 w-full sm:w-[48%] mb-6
         ${exp.id === 4 ? "invisible pointer-events-none" : ""}`}
     >
-      {/* En-tête */}
       <div className="flex items-start justify-between cursor-pointer" onClick={() => setOpen(!open)}>
         <div className="flex items-center gap-4">
           {exp.logo && <img src={exp.logo} alt={exp.company ?? ""} className="w-16 h-16 object-contain" />}
@@ -29,10 +28,8 @@ const ExperienceCard = ({ exp }: { exp: (typeof experiencesData)[0] }) => {
         ></i>
       </div>
 
-      {/* Contexte toujours visible */}
       <p className="mt-4 text-sm text-gray-600">{exp.context ?? ""}</p>
 
-      {/* Détails déroulants */}
       <div className={`overflow-hidden transition-all duration-500 ${open ? "max-h-96 mt-3" : "max-h-0"}`}>
         <div className="text-gray-600 text-sm leading-relaxed space-y-3">
           <p className="whitespace-pre-line">{exp.details ?? ""}</p>

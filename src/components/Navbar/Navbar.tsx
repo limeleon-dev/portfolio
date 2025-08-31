@@ -1,10 +1,12 @@
-import "./Navbar.css";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    const navbar = document.querySelector(".navbar-block");
+    const navbar = document.querySelector(".navbar");
     if (element && navbar) {
       const navbarHeight = navbar.getBoundingClientRect().height;
       const y = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
@@ -12,30 +14,43 @@ const Navbar = () => {
     }
   };
 
+  const changeLanguage = (lang: "fr" | "en") => {
+    i18n.changeLanguage(lang);
+  };
+
   return (
     <>
-      <div className="navbar-block fixed top-0 left-0 right-0 z-50 shadow-md">
+      <div className="w-full flex justify-center sticky top-0 left-0 right-0 z-50 shadow-md">
         <div className="navbar bg-orange-100 ps-5 pe-5">
           <div className="navbar-start">
-            <a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-xl font-bold">
-              Guillaume Hostache
+            <a
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="text-xl font-bold cursor-pointer"
+            >
+              {t("brand")}
             </a>
           </div>
 
           <div className="navbar-center m-auto">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a onClick={() => scrollToSection("competences")}>Compétences</a>
+                <a onClick={() => scrollToSection("competences")} className="cursor-pointer">
+                  {t("navbar.competences")}
+                </a>
               </li>
               <li>
-                <a onClick={() => scrollToSection("formations")}>Formations</a>
+                <a onClick={() => scrollToSection("formations")} className="cursor-pointer">
+                  {t("navbar.formations")}
+                </a>
               </li>
               <li>
-                <a onClick={() => scrollToSection("experiences")}>Expériences</a>
+                <a onClick={() => scrollToSection("experiences")} className="cursor-pointer">
+                  {t("navbar.experiences")}
+                </a>
               </li>
               <li>
-                <a className="pointer-events-none" onClick={() => scrollToSection("realisations")}>
-                  Réalisations
+                <a onClick={() => scrollToSection("realisations")} className="cursor-pointer">
+                  {t("navbar.realisations")}
                 </a>
               </li>
             </ul>
@@ -48,7 +63,7 @@ const Navbar = () => {
               style={{ anchorName: "langage-dropdown-anchor" } as React.CSSProperties}
             >
               <i className="fa-solid fa-earth-europe"></i>
-              Langue
+              {t("navbar.langue")}
             </button>
 
             <ul
@@ -58,10 +73,10 @@ const Navbar = () => {
               style={{ positionAnchor: "langage-dropdown-anchor" } as React.CSSProperties}
             >
               <li>
-                <a>Français</a>
+                <a onClick={() => changeLanguage("fr")}>Français</a>
               </li>
               <li>
-                <a>English</a>
+                <a onClick={() => changeLanguage("en")}>English</a>
               </li>
             </ul>
 
@@ -70,7 +85,7 @@ const Navbar = () => {
               onClick={() => scrollToSection("contact")}
             >
               <i className="fa-solid fa-paper-plane"></i>
-              Contactez moi
+              {t("navbar.contact")}
             </button>
           </div>
         </div>

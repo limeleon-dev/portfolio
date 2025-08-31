@@ -6,12 +6,10 @@ const Footer = () => {
   return (
     <footer id="footer" className="bg-yellow-100 pt-4 pb-6">
       <div className="flex flex-col items-center mx-auto px-5">
-        {/* line */}
         <div className="relative w-full flex items-center justify-center my-6">
           <div className="h-[4px] w-2/3 rounded-full bg-gradient-to-r from-transparent via-gray-600 to-transparent"></div>
         </div>
 
-        {/* content */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex items-center gap-2">
             <p className="text-base font-bold mr-4">Guillaume Hostache</p>
