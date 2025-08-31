@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "logo": "kc_logo.webp",
+    "company": "Groupe KEY CONSULTING",
+    "type": "Stage",
+    "title": "Développeur Web Full-Stack",
+    "date": "février 2025 - août 2025",
+    "location": "Lyon, Auvergne-Rhône-Alpes, France",
+    "context": "Dans le cadre de ma première année de Master, j’ai réalisé un stage en entreprise. L’objectif était de contribuer à la maintenance applicative et à l’évolution d’applications web pour un grand compte client.",
+    "details": "Intégration au sein d’une équipe de développement en charge de la maintenance applicative d’applications web pour un client de Key Consulting.\n- Correction d'anomalies et développement d’évolutions.\n- Intégration de SonarQube Server.\n- Montée de version des applications (Spring Boot, React, Angular).",
+    "skills": [
+      "Maintenance Applicative",
+      "Méthodes agiles",
+      "Angular",
+      "React",
+      "Java",
+      "Spring Boot",
+      "Sonarqube Server",
+      "CI/CD",
+      "Kubernetes",
+      "JUnit",
+      "Cucumber"
+    ]
+  },
+  {
+    "id": 2,
+    "logo": "axopen_logo.webp",
+    "company": "AXOPEN",
+    "type": "Stage",
+    "title": "Développeur Web Full-Stack",
+    "date": "avril 2024 - août 2024",
+    "location": "Lyon, Auvergne-Rhône-Alpes, France",
+    "context": "Dans le cadre de ma première année de Master, j’ai réalisé un stage en entreprise. L’objectif était de contribuer à la maintenance applicative et à l’évolution d’applications web pour un grand compte client.",
+    "details": "Intégration au sein d’une équipe de développement en charge de la maintenance applicative pour plusieurs applications web d’un client d’Axopen.\n- Correction d’anomalies et développement d’évolutions.\n- Montée de version sur une des applications.\n- Intégration de tests automatisés fonctionnels.",
+    "skills": [
+      "Maintenance Applicative",
+      "Méthodes agiles",
+      "JavaServer Faces",
+      "Php",
+      "Symfony",
+      "Docker",
+      "Robot Framework",
+      "SonarQube Server"
+    ]
+  },
+  {
+    "id": 3,
+    "logo": "info_solutions.webp",
+    "company": "Google",
+    "type": "Projet perso",
+    "title": "Contributeur Open Source",
+    "date": "",
+    "location": "",
+    "context": "Dans le cadre de ma première année de Master, j’ai réalisé un stage en entreprise. L’objectif était de contribuer à la maintenance applicative et à l’évolution d’applications web pour un grand compte client.",
+    "details": "Contribution à des projets open-source, corrections de bugs, amélioration de la documentation et revue de code.",
+    "skills": ["Open Source", "Collaboration", "Documentation"]
+  },
+  {
+    "id": 4,
+    "logo": "",
+    "company": "",
+    "type": "",
+    "title": "",
+    "date": "",
+    "location": "",
+    "context": "",
+    "details": "",
+    "skills": []
+  }
+]

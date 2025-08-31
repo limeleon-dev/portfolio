@@ -1,15 +1,14 @@
 import { object, string } from "yup";
+import { EMAIL_REGEX_PATTERN, USERNAME_REGEX_PATTERN } from "../../utils/regex.utils";
 
 export const contactValidation = object().shape({
   username: string()
     .trim()
-    .matches(/^[A-Za-z][A-Za-z0-9-]*$/, "not good")
-    .required("is requis qui"),
+    .matches(USERNAME_REGEX_PATTERN, "Merci de n'utiliser que des chiffres, des lettres ou des tirets '-'.")
+    .required("Veuillez saisir votre nom."),
   email: string()
-    .matches(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-      "nonnonono"
-    )
-    .required("toto12"),
-  message: string().required("message obligatoire"),
+    .trim()
+    .matches(EMAIL_REGEX_PATTERN, "Merci d'utiliser une adresse mail valide.")
+    .required("Veuillez saisir votre adresse mail."),
+  message: string().required("Veuillez saisir votre message."),
 });

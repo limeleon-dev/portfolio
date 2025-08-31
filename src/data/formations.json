@@ -1,1 +1,32 @@
-{}
+[
+  {
+    "id": 1,
+    "title": "Baccalauréat Scientifique",
+    "periode": "Septembre 2017 - Juillet 2020",
+    "school": "Lycée de l'Elorn",
+    "schoolPlace": "Landerneau",
+    "level": "Bac",
+    "description": "Obtention avec mention \"Assez Bien\". Option Sciences de l'ingénieur (SI) et option Informatique et Sciences du Numérique (ISN).",
+    "details": "TODO"
+  },
+  {
+    "id": 2,
+    "title": "Licence de Sciences, Technologies, Santé, Parcours International",
+    "periode": "Septembre 2020 - Juin 2023",
+    "school": "Université de Bretagne Occidentale",
+    "schoolPlace": "Brest",
+    "level": "Bac +3",
+    "description": "Obtention avec mention \"Très bien\". Mobilité à l’international à l’Université du Québec à Montréal, au Canada (Semestre 5 et 6).",
+    "details": "TODO"
+  },
+  {
+    "id": 3,
+    "title": "Master en Conception et Intégration Multimédia (CIM)",
+    "periode": "Septembre 2023 - Présent",
+    "school": "Université Lumière Lyon 2",
+    "schoolPlace": "Lyon",
+    "level": "Bac +5",
+    "description": "1ère année en master Informatique, puis 2ème année en M2 CIM.",
+    "details": "TODO"
+  }
+]

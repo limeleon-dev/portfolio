@@ -1,0 +1,163 @@
+[
+  {
+    "label": "HTML & CSS",
+    "firstIcon": "si si-html5",
+    "secondIcon": "si si-css3",
+    "desc": "Langages pour structurer et styliser des pages web",
+    "firstIconColor": "#E34F26",
+    "secondIconColor": "#1572B6",
+    "hoverColor": "#E34F26"
+  },
+  {
+    "label": "JavaScript & TypeScript",
+    "firstIcon": "si si-javascript",
+    "secondIcon": "si si-typescript",
+    "desc": "Langages dynamique pour le web (TypeScript est une version avec typage, plus robuste)",
+    "firstIconColor": "#F7DF1E",
+    "secondIconColor": "#3178C6",
+    "hoverColor": "#F7DF1E"
+  },
+  {
+    "label": "Angular",
+    "firstIcon": "si si-angular",
+    "secondIcon": "",
+    "desc": "Framework pour construire des applications web dynamiques (basé sur TypeScript)",
+    "firstIconColor": "#DD0031",
+    "secondIconColor": "",
+    "hoverColor": "#DD0031"
+  },
+  {
+    "label": "React",
+    "firstIcon": "si si-react",
+    "desc": "Librairie JavaScript pour créer des interfaces utilisateur modernes et réactives",
+    "firstIconColor": "#61DAFB",
+    "secondIconColor": "",
+    "hoverColor": "#61DAFB"
+  },
+  {
+    "label": "Vue.js",
+    "firstIcon": "si si-vuedotjs",
+    "secondIcon": "",
+    "desc": "Framework JavaScript progressif, léger et flexible pour créer des interfaces utilisateur",
+    "firstIconColor": "#4FC08D",
+    "secondIconColor": "",
+    "hoverColor": "#4FC08D"
+  },
+  {
+    "label": "Java",
+    "firstIcon": "fa-brands fa-java",
+    "secondIcon": "",
+    "desc": "Langage de programmation orienté objet et multi-plateforme",
+    "firstIconColor": "#007396",
+    "secondIconColor": "",
+    "hoverColor": "#007396"
+  },
+  {
+    "label": "Spring Boot",
+    "firstIcon": "si si-springboot",
+    "secondIcon": "",
+    "desc": "Framework Java pour créer des applications web et microservices",
+    "firstIconColor": "#6DB33F",
+    "secondIconColor": "",
+    "hoverColor": "#6DB33F"
+  },
+  {
+    "label": "PHP",
+    "firstIcon": "si si-php",
+    "secondIcon": "",
+    "desc": "Langage de script serveur utilisé pour générer des pages web dynamiques",
+    "firstIconColor": "#777BB4",
+    "secondIconColor": "",
+    "hoverColor": "#777BB4"
+  },
+  {
+    "label": "Symfony",
+    "firstIcon": "si si-symfony",
+    "secondIcon": "",
+    "desc": "Framework PHP complet pour développer des applications web évolutives",
+    "firstIconColor": "#000000",
+    "secondIconColor": "",
+    "hoverColor": "#000000"
+  },
+  {
+    "label": "MySQL",
+    "firstIcon": "si si-mysql",
+    "secondIcon": "",
+    "desc": "Système de gestion de base de données relationnelle",
+    "firstIconColor": "#4479A1",
+    "secondIconColor": "",
+    "hoverColor": "#4479A1"
+  },
+  {
+    "label": "PostgreSQL",
+    "firstIcon": "si si-postgresql",
+    "secondIcon": "",
+    "desc": "Base de données relationnelle open-source et puissante",
+    "firstIconColor": "#4169E1",
+    "secondIconColor": "",
+    "hoverColor": "#4169E1"
+  },
+  {
+    "label": "Firebase",
+    "firstIcon": "si si-firebase",
+    "secondIcon": "",
+    "desc": "Plateforme Google avec base de données temps réel, authentification et hébergement",
+    "firstIconColor": "#FFCA28",
+    "secondIconColor": "",
+    "hoverColor": "#FFCA28"
+  },
+  {
+    "label": "Docker",
+    "firstIcon": "si si-docker",
+    "secondIcon": "",
+    "desc": "Outil de conteneurisation pour exécuter des applications",
+    "firstIconColor": "#2496ED",
+    "secondIconColor": "",
+    "hoverColor": "#2496ED"
+  },
+  {
+    "label": "Kubernetes",
+    "firstIcon": "si si-kubernetes",
+    "secondIcon": "",
+    "desc": "Outil d’orchestration pour gérer des conteneurs à grande échelle",
+    "firstIconColor": "#326CE5",
+    "secondIconColor": "",
+    "hoverColor": "#326CE5"
+  },
+  {
+    "label": "Swift",
+    "firstIcon": "si si-swift",
+    "secondIcon": "",
+    "desc": "Langage de programmation pour le développement sur iOS et macOS",
+    "firstIconColor": "#FA7343",
+    "secondIconColor": "",
+    "hoverColor": "#FA7343"
+  },
+  {
+    "label": "C & C++",
+    "firstIcon": "si si-c",
+    "secondIcon": "si si-cplusplus",
+    "desc": "Langages pour la programmation système et la programmation orientée objet",
+    "firstIconColor": "#A8B9CC",
+    "secondIconColor": "#00599C",
+    "hoverColor": "#00599C"
+  },
+  {
+    "label": "Python",
+    "firstIcon": "si si-python",
+    "secondIcon": "",
+    "desc": "Langage polyvalent utilisé en web, data science, IA, scripts et plus encore",
+    "firstIconColor": "#3776AB",
+    "secondIconColor": "",
+    "hoverColor": "#3776AB"
+  },
+  {
+    "label": "Git",
+    "firstIcon": "si si-git",
+    "secondIcon": "",
+    "desc": "Système de contrôle de version distribué",
+    "firstIconColor": "#F05032",
+    "secondIconColor": "",
+    "hoverColor": "#F05032"
+  }
+]

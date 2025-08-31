@@ -1,36 +1,46 @@
 import "./Navbar.css";
-
 import React from "react";
 
 const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    const navbar = document.querySelector(".navbar-block");
+    if (element && navbar) {
+      const navbarHeight = navbar.getBoundingClientRect().height;
+      const y = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
   return (
     <>
-      <div className="navbar-block">
-        <div className="navbar w-[60vw] bg-primary m-5 ps-5 pe-5">
+      <div className="navbar-block fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div className="navbar bg-orange-100 ps-5 pe-5">
           <div className="navbar-start">
-            <a className="btn btn-ghost text-xl">Guillaume Hostache</a>
+            <a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-xl font-bold">
+              Guillaume Hostache
+            </a>
           </div>
 
           <div className="navbar-center m-auto">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a onClick={() => scrollToSection("realisations")}>Réalisations</a>
+                <a onClick={() => scrollToSection("competences")}>Compétences</a>
+              </li>
+              <li>
+                <a onClick={() => scrollToSection("formations")}>Formations</a>
               </li>
               <li>
                 <a onClick={() => scrollToSection("experiences")}>Expériences</a>
               </li>
               <li>
-                <a onClick={() => scrollToSection("formations")}>Formations</a>
+                <a className="pointer-events-none" onClick={() => scrollToSection("realisations")}>
+                  Réalisations
+                </a>
               </li>
             </ul>
           </div>
+
           <div className="navbar-end">
             <button
               className="btn bg-white text-black border-[#e5e5e5] me-2"
