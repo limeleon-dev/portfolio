@@ -3,7 +3,8 @@
     "label": "HTML & CSS",
     "firstIcon": "si si-html5",
     "secondIcon": "si si-css3",
-    "desc": "Langages pour structurer et styliser des pages web",
+    "descFr": "Langages pour structurer et styliser des pages web",
+    "descEn": "Languages to structure and style web pages",
     "firstIconColor": "#E34F26",
     "secondIconColor": "#1572B6",
     "hoverColor": "#E34F26"
@@ -12,7 +13,8 @@
     "label": "JavaScript & TypeScript",
     "firstIcon": "si si-javascript",
     "secondIcon": "si si-typescript",
-    "desc": "Langages dynamique pour le web (TypeScript est une version avec typage, plus robuste)",
+    "descFr": "Langages dynamique pour le web (TypeScript est une version avec typage, plus robuste)",
+    "descEn": "Dynamic languages for the web (TypeScript is a typed, more robust version)",
     "firstIconColor": "#F7DF1E",
     "secondIconColor": "#3178C6",
     "hoverColor": "#F7DF1E"
@@ -21,7 +23,8 @@
     "label": "Angular",
     "firstIcon": "si si-angular",
     "secondIcon": "",
-    "desc": "Framework pour construire des applications web dynamiques (basé sur TypeScript)",
+    "descFr": "Framework pour construire des applications web dynamiques (basé sur TypeScript)",
+    "descEn": "Framework to build dynamic web applications (based on TypeScript)",
     "firstIconColor": "#DD0031",
     "secondIconColor": "",
     "hoverColor": "#DD0031"
@@ -29,7 +32,8 @@
   {
     "label": "React",
     "firstIcon": "si si-react",
-    "desc": "Librairie JavaScript pour créer des interfaces utilisateur modernes et réactives",
+    "descFr": "Librairie JavaScript pour créer des interfaces utilisateur modernes et réactives",
+    "descEn": "JavaScript library to build modern, reactive user interfaces",
     "firstIconColor": "#61DAFB",
     "secondIconColor": "",
     "hoverColor": "#61DAFB"
@@ -38,7 +42,8 @@
     "label": "Vue.js",
     "firstIcon": "si si-vuedotjs",
     "secondIcon": "",
-    "desc": "Framework JavaScript progressif, léger et flexible pour créer des interfaces utilisateur",
+    "descFr": "Framework JavaScript progressif, léger et flexible pour créer des interfaces utilisateur",
+    "descEn": "Progressive, lightweight and flexible JavaScript framework to build user interfaces",
     "firstIconColor": "#4FC08D",
     "secondIconColor": "",
     "hoverColor": "#4FC08D"
@@ -47,7 +52,8 @@
     "label": "Java",
     "firstIcon": "fa-brands fa-java",
     "secondIcon": "",
-    "desc": "Langage de programmation orienté objet et multi-plateforme",
+    "descFr": "Langage de programmation orienté objet et multi-plateforme",
+    "descEn": "Object-oriented, multi-platform programming language",
     "firstIconColor": "#007396",
     "secondIconColor": "",
     "hoverColor": "#007396"
@@ -56,7 +62,8 @@
     "label": "Spring Boot",
     "firstIcon": "si si-springboot",
     "secondIcon": "",
-    "desc": "Framework Java pour créer des applications web et microservices",
+    "descFr": "Framework Java pour créer des applications web et microservices",
+    "descEn": "Java framework to build web applications and microservices",
     "firstIconColor": "#6DB33F",
     "secondIconColor": "",
     "hoverColor": "#6DB33F"
@@ -65,7 +72,8 @@
     "label": "PHP",
     "firstIcon": "si si-php",
     "secondIcon": "",
-    "desc": "Langage de script serveur utilisé pour générer des pages web dynamiques",
+    "descFr": "Langage de script serveur utilisé pour générer des pages web dynamiques",
+    "descEn": "Server-side scripting language used to generate dynamic web pages",
     "firstIconColor": "#777BB4",
     "secondIconColor": "",
     "hoverColor": "#777BB4"
@@ -74,7 +82,8 @@
     "label": "Symfony",
     "firstIcon": "si si-symfony",
     "secondIcon": "",
-    "desc": "Framework PHP complet pour développer des applications web évolutives",
+    "descFr": "Framework PHP complet pour développer des applications web évolutives",
+    "descEn": "Full-stack PHP framework to build scalable web applications",
     "firstIconColor": "#000000",
     "secondIconColor": "",
     "hoverColor": "#000000"
@@ -83,7 +92,8 @@
     "label": "MySQL",
     "firstIcon": "si si-mysql",
     "secondIcon": "",
-    "desc": "Système de gestion de base de données relationnelle",
+    "descFr": "Système de gestion de base de données relationnelle",
+    "descEn": "Relational database management system",
     "firstIconColor": "#4479A1",
     "secondIconColor": "",
     "hoverColor": "#4479A1"
@@ -92,7 +102,8 @@
     "label": "PostgreSQL",
     "firstIcon": "si si-postgresql",
     "secondIcon": "",
-    "desc": "Base de données relationnelle open-source et puissante",
+    "descFr": "Base de données relationnelle open-source et puissante",
+    "descEn": "Powerful, open source relational database",
     "firstIconColor": "#4169E1",
     "secondIconColor": "",
     "hoverColor": "#4169E1"
@@ -101,7 +112,8 @@
     "label": "Firebase",
     "firstIcon": "si si-firebase",
     "secondIcon": "",
-    "desc": "Plateforme Google avec base de données temps réel, authentification et hébergement",
+    "descFr": "Plateforme Google intégrant plusieurs outils",
+    "descEn": "Google platform integrating multiple tools",
     "firstIconColor": "#FFCA28",
     "secondIconColor": "",
     "hoverColor": "#FFCA28"
@@ -110,7 +122,8 @@
     "label": "Docker",
     "firstIcon": "si si-docker",
     "secondIcon": "",
-    "desc": "Outil de conteneurisation pour exécuter des applications",
+    "descFr": "Outil de conteneurisation pour exécuter des applications",
+    "descEn": "Containerization tool to run applications",
     "firstIconColor": "#2496ED",
     "secondIconColor": "",
     "hoverColor": "#2496ED"
@@ -119,7 +132,8 @@
     "label": "Kubernetes",
     "firstIcon": "si si-kubernetes",
     "secondIcon": "",
-    "desc": "Outil d’orchestration pour gérer des conteneurs à grande échelle",
+    "descFr": "Outil d’orchestration pour gérer des conteneurs à grande échelle",
+    "descEn": "Orchestration tool to manage containers at scale",
     "firstIconColor": "#326CE5",
     "secondIconColor": "",
     "hoverColor": "#326CE5"
@@ -128,7 +142,8 @@
     "label": "Swift",
     "firstIcon": "si si-swift",
     "secondIcon": "",
-    "desc": "Langage de programmation pour le développement sur iOS et macOS",
+    "descFr": "Langage de programmation pour le développement sur iOS et macOS",
+    "descEn": "Programming language for iOS and macOS development",
     "firstIconColor": "#FA7343",
     "secondIconColor": "",
     "hoverColor": "#FA7343"
@@ -137,7 +152,8 @@
     "label": "C & C++",
     "firstIcon": "si si-c",
     "secondIcon": "si si-cplusplus",
-    "desc": "Langages pour la programmation système et la programmation orientée objet",
+    "descFr": "Langages pour la programmation système et la programmation orientée objet",
+    "descEn": "General-purpose programming languages",
     "firstIconColor": "#A8B9CC",
     "secondIconColor": "#00599C",
     "hoverColor": "#00599C"
@@ -146,7 +162,8 @@
     "label": "Python",
     "firstIcon": "si si-python",
     "secondIcon": "",
-    "desc": "Langage polyvalent utilisé en web, data science, IA, scripts et plus encore",
+    "descFr": "Langage polyvalent utilisé en web, data science, IA, scripts et plus encore",
+    "descEn": "Versatile language used in web, data science, AI, scripting and more",
     "firstIconColor": "#3776AB",
     "secondIconColor": "",
     "hoverColor": "#3776AB"
@@ -155,7 +172,8 @@
     "label": "Git",
     "firstIcon": "si si-git",
     "secondIcon": "",
-    "desc": "Système de contrôle de version distribué",
+    "descFr": "Système de contrôle de version distribué",
+    "descEn": "Distributed version control system",
     "firstIconColor": "#F05032",
     "secondIconColor": "",
     "hoverColor": "#F05032"

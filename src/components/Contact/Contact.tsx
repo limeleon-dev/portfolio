@@ -1,10 +1,13 @@
 import { useFormik } from "formik";
 import { useState } from "react";
-import { contactValidation } from "./ContactValidation";
+import { useTranslation } from "react-i18next";
+import { getContactValidation } from "./ContactValidation";
 import ContactDialog from "./ContactDialog";
 import { sendAutoResponseMail, sendContactMail } from "../../services/email.service";
+import { scrollToSection } from "../../utils/scrollToSection.utils";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [hasBeenSubmitted, setHasBeenSubmitted] = useState<boolean>(false);
   const [openDialog, setOpenDialog] = useState<boolean>(false);
 
@@ -14,7 +17,7 @@ const Contact = () => {
       email: "",
       message: "",
     },
-    validationSchema: contactValidation,
+    validationSchema: getContactValidation(t),
     onSubmit: async (values) => {
       setHasBeenSubmitted(true);
 
@@ -37,100 +40,98 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <section id="contact" className="flex items-center justify-center bg-red-200 py-12">
-        <div className="card w-[50vw] bg-yellow-100">
-          <div className="card-body">
-            <div className="text-center ">
-              <h2 className="text-2xl mb-2 font-bold">Je suis à votre écoute, écrivez moi !</h2>
-              <p className="text-base text-center font-semibold">
-                Que ce soit pour une question, un projet ou juste pour dire bonjour, n'hésitez pas à me laisser un
-                message et je me ferai un plaisir de vous répondre.
-              </p>
-            </div>
-
-            <form onSubmit={formik.handleSubmit} className="space-y-6">
-              <fieldset className="fieldset">
-                <legend className="fieldset-legend text-sm">Votre nom :</legend>
-
-                <label className="input text-dark w-full bg-white rounded-lg border border-gray-300 px-3 py-2">
-                  <i className="fa-solid fa-user"></i>
-                  <input
-                    type="text"
-                    name="username"
-                    placeholder="John Doe"
-                    value={formik.values.username}
-                    onChange={formik.handleChange}
-                    className="w-full focus:outline-none"
-                  />
-                </label>
-                {formik.touched.username && formik.errors.username && (
-                  <div className="mt-2 px-3 py-2 rounded-lg bg-red-100 border border-red-300 text-red-700 text-sm font-medium shadow-sm">
-                    {formik.errors.username}
-                  </div>
-                )}
-              </fieldset>
-
-              <fieldset className="fieldset">
-                <legend className="fieldset-legend text-sm">Votre adresse mail :</legend>
-                <label className="input w-full bg-white rounded-lg border border-gray-300 px-3 py-2">
-                  <i className="fa-solid fa-envelope"></i>
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="john.doe@example.com"
-                    value={formik.values.email}
-                    onChange={formik.handleChange}
-                    className="w-full focus:outline-none"
-                  />
-                </label>
-                {formik.touched.email && formik.errors.email && (
-                  <div className="mt-2 px-3 py-2 rounded-lg bg-red-100 border border-red-300 text-red-700 text-sm font-medium shadow-sm">
-                    {formik.errors.email}
-                  </div>
-                )}
-              </fieldset>
-
-              <fieldset className="fieldset">
-                <legend className="fieldset-legend text-sm">Votre message :</legend>
-
-                <textarea
-                  className="textarea h-24 w-full bg-white rounded-lg border border-gray-300 px-3 py-2 focus:outline-none"
-                  name="message"
-                  placeholder="Bonjour, je te contacte pour te parler de ..."
-                  value={formik.values.message}
-                  onChange={formik.handleChange}
-                />
-                {formik.touched.message && formik.errors.message && (
-                  <div className="mt-2 px-3 py-2 rounded-lg bg-red-100 border border-red-300 text-red-700 text-sm font-medium shadow-sm">
-                    {formik.errors.message}
-                  </div>
-                )}
-              </fieldset>
-
-              <div className="form-control mt-8">
-                <button
-                  type="submit"
-                  className="btn btn-primary w-full text-base font-bold py-3"
-                  disabled={hasBeenSubmitted}
-                >
-                  Envoyer
-                </button>
+      <>
+        <section id="contact" className="flex items-center justify-center bg-transparent py-6">
+          <div className="card w-[40vw] bg-navbar border-white border-2 shadow-navbar">
+            <div className="card-body">
+              <div className="text-center ">
+                <h2 className="text-2xl mb-2 font-bold">{t("contact.title")}</h2>
+                <p className="text-base text-center font-semibold">
+                  {t("contact.description")}
+                </p>
               </div>
-            </form>
-          </div>
-        </div>
 
-        {openDialog && (
-          <ContactDialog
-            title="Votre message a bien été envoyé !"
-            message="Je vous remercie pour votre message ! Je reviendrai vers vous dans les plus brefs délais. Vous allez recevoir un email de confirmation automatique."
-            closeButtonLabel="Fermer"
-            handleClose={handleCloseDialog}
-          />
-        )}
-      </section>
-    </>
+              <form onSubmit={formik.handleSubmit} className="space-y-6">
+                <fieldset className="fieldset">
+                  <legend className="fieldset-legend text-base">{t("contact.nameLabel")}</legend>
+                  <label className="input text-dark w-full bg-white rounded-lg border border-gray-300 px-3 py-2">
+                    <i className="fa-solid fa-user"></i>
+                    <input
+                        type="text"
+                        name="username"
+                        placeholder={t("contact.namePlaceholder")}
+                        value={formik.values.username}
+                        onChange={formik.handleChange}
+                        className="w-full focus:outline-none"
+                    />
+                  </label>
+                  {formik.touched.username && formik.errors.username && (
+                      <div className="mt-2 px-3 py-2 rounded-lg bg-red-100 border border-red-300 text-red-700 text-base font-medium shadow-sm">
+                        {formik.errors.username}
+                      </div>
+                  )}
+                </fieldset>
+
+                <fieldset className="fieldset">
+                  <legend className="fieldset-legend text-base">{t("contact.emailLabel")}</legend>
+                  <label className="input w-full bg-white rounded-lg border border-gray-300 px-3 py-2">
+                    <i className="fa-solid fa-envelope"></i>
+                    <input
+                        type="text"
+                        name="email"
+                        placeholder={t("contact.emailPlaceholder")}
+                        value={formik.values.email}
+                        onChange={formik.handleChange}
+                        className="w-full focus:outline-none"
+                    />
+                  </label>
+                  {formik.touched.email && formik.errors.email && (
+                      <div className="mt-2 px-3 py-2 rounded-lg bg-red-100 border border-red-300 text-red-700 text-base font-medium shadow-sm">
+                        {formik.errors.email}
+                      </div>
+                  )}
+                </fieldset>
+
+                <fieldset className="fieldset">
+                  <legend className="fieldset-legend text-base">{t("contact.messageLabel")}</legend>
+                  <textarea
+                      className="textarea h-24 w-full bg-white rounded-lg border border-gray-300 px-3 py-2 focus:outline-none"
+                      name="message"
+                      placeholder={t("contact.messagePlaceholder")}
+                      value={formik.values.message}
+                      onChange={formik.handleChange}
+                  />
+                  {formik.touched.message && formik.errors.message && (
+                      <div className="mt-2 px-3 py-2 rounded-lg bg-red-100 border border-red-300 text-red-700 text-base font-medium shadow-sm">
+                        {formik.errors.message}
+                      </div>
+                  )}
+                </fieldset>
+
+                <div className="form-control mt-8">
+                  <button
+                      type="submit"
+                      disabled={hasBeenSubmitted}
+                      onClick={() => scrollToSection("contact")}
+                      className="w-full btn btn-sm bg-primary text-white hover:bg-primary-dark transition-navbar focus-navbar rounded-lg shadow-md hover:shadow-lg"
+                  >
+                    <span className="hidden sm:inline text-base">{t("contact.sendButton")}</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          {openDialog && (
+              <ContactDialog
+                  title={t("contact.dialogTitle")}
+                  message={t("contact.dialogMessage")}
+                  closeButtonLabel={t("contact.dialogClose")}
+                  handleClose={handleCloseDialog}
+              />
+          )}
+        </section>
+      </>
   );
 };
 
