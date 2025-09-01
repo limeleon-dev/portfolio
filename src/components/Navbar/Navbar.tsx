@@ -11,7 +11,6 @@ const Navbar: React.FC = () => {
   return (
       <div className="fixed top-0 left-0 right-0 z-50 justify-items-center bg-navbar shadow-navbar transition-navbar">
         <div className="navbar container mx-5 py-2">
-          {/* Brand */}
           <div className="navbar-start">
             <a
                 onClick={() => scrollToSection("presentations")}
@@ -21,7 +20,6 @@ const Navbar: React.FC = () => {
             </a>
           </div>
 
-          {/* Desktop Links */}
           <div className="navbar-center hidden md:flex">
             <ul className="menu menu-horizontal gap-2 text-base font-medium">
               <li>
@@ -59,9 +57,7 @@ const Navbar: React.FC = () => {
             </ul>
           </div>
 
-          {/* Actions / Mobile toggle */}
           <div className="navbar-end flex items-center gap-3">
-            {/* Lang switcher */}
             <div className="dropdown dropdown-end">
               <label
                   tabIndex={0}
@@ -91,7 +87,6 @@ const Navbar: React.FC = () => {
               </ul>
             </div>
 
-            {/* Contact */}
             <button
                 onClick={() => scrollToSection("contact")}
                 className="btn btn-sm bg-primary text-white hover:bg-primary-dark transition-navbar focus-navbar rounded-lg shadow-md hover:shadow-lg"

@@ -21,8 +21,16 @@ const fr = {
     titre:"Compétences",
     sousTitre:"Stack technique et technologies",
   },
-  formations: {},
-  experiences: {},
+  formations: {
+    subtitle: "Mes diplômes et formations académiques", // EN: "My degrees and academic background"
+    learnMoreBtn: "En savoir plus", // EN: "Learn more"
+    closeBtn: "Fermer", // EN: "Close"
+    levelLabel: "Niveau d'étude", // EN: "Degree level"
+  },
+  experiences: {
+    title: "Experiences",
+    subtitle: "My professional experiences",
+  },
   contact: {
     title: "Je suis à votre écoute, écrivez moi !",
     description: "Que ce soit pour une question, un projet ou juste pour dire bonjour, n'hésitez pas à me laisser un message et je me ferai un plaisir de vous répondre.",

@@ -20,8 +20,16 @@ const en = {
     titre: "Skills",
     sousTitre: "Tech stack and technologies",
   },
-  formations: {},
-  experiences: {},
+  formations: {
+    subtitle: "My degrees and academic background",
+    learnMoreBtn: "Learn more",
+    closeBtn: "Close",
+    levelLabel: "Degree level",
+  },
+  experiences: {
+    title: "Experiences",
+    subtitle: "My professional experiences",
+  },
   contact: {
     title: "I'm listening, write to me!",
     description: "Whether it's a question, a project, or just to say hello, feel free to leave me a message and I'll be happy to get back to you.",
